@@ -23,6 +23,13 @@ body {
     top: 0;
     left: 0;
 }
+.toggle {
+    display: none;
+}
+
+.toggle i {
+    font-size: 32px;
+}
 
 .search input {
     text-align: center;
@@ -157,24 +164,6 @@ h1 {
 h4 {
     font-size: 20px;
 }
-
-@media only screen and (max-width: 700px) {
-    .Header {
-        width: 200%;
-    }
-
-    .second-header {
-        width: 200%;
-    }
-
-    main {
-        width: 200%;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-
-    }
-}
-
 .Second-container {
     display: grid;
     grid-gap: 70px 20px;
@@ -214,8 +203,143 @@ h4 {
     padding: 15px 300px;
     box-sizing: border-box;
 }
+.footer h3:hover, .webfooter p:hover
+{
+    color: lightslategray;
+    cursor: pointer;
+}
 
 .webfooter {
     padding-top: 30px;
     font-size: 12px;
+   
+}
+/* contactcss */
+.particles{
+    background-color: white;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin:auto;
+    margin-top: 20px;
+    height: fit-content;
+    max-width: 50%;
+    width: 20%;
+}
+.particles .items{
+    text-align: center;
+}
+
+.particles .users .password {
+    font-size: 12px;
+}
+.particles .username{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid grey;
+    padding-bottom: 10px;
+    gap: 5px;
+}
+.particles .username input{
+    padding: 5px 5px;
+    border: none;
+    width: 100%;
+} 
+.particles .Email input{
+    padding: 5px 5px;
+    border: none;
+    border-bottom: 1px solid gray;
+    width: 100%;
+}
+.particles .phonenumber input{
+    padding: 5px 5px;
+    border: none;
+    border-bottom: 1px solid gray;
+    width: 100%;
+}
+ .particles button{
+  background-color: black;
+    width: 100%;
+    border-radius: 30px;
+    color: white;
+    padding: 10px 10px;
+    border: none;
+}   
+.signup{
+    text-align: center;
+}
+.login{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+}
+.login a i{
+    width: 100%;
+    font-size: xx-large;
+}
+
+@media only screen and (max-width: 768px) {
+    .toggle {
+        display: block;
+        cursor: pointer;
+    } 
+    .Header {
+        width: 200%;
+    }
+    .active{
+        background-color:grey;
+    }
+    .active .nav-item {
+        display: block;
+    }
+    .active .nav-item:hover {
+        background-color: #0d0e0d;
+    }
+    .active .nav-item a:hover {
+        color: #7a7a7a;
+        text-decoration: none;
+    }
+    .content .nav-menu {
+        position: absolute;
+        left: 0;
+        top: 70px;
+        right: 0;
+    }
+    .nav-menu li {
+        margin: 0 auto;
+    }
+    .nav-item {
+        text-align: center;
+        display: none;
+    }
+    .nav-item a {
+        display: block;
+        padding: 15px;
+        font-weight: 700;
+        color: #1D263B;
+    }
+    .second-header {
+        width: 200%;
+    }
+
+    main {
+        width: 200%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+    .Second-container{
+        width: 200%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    footer{
+        width: 200%;
+    }
 }
