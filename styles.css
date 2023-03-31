@@ -6,6 +6,7 @@
 
 body {
     width: 100%;
+    font-family: 'Lato', sans-serif;
 }
 
 .Header {
@@ -96,12 +97,14 @@ body {
     padding: 10px;
     border-radius: 20px;
 }
+
 .second-header button.hover,
-.second-header button.active{
+.second-header button.active {
     color: #088178;
 }
+
 .second-header button.hover::after,
-.second-header button.hover::after{
+.second-header button.hover::after {
     content: "";
     width: 30%;
     height: 2px;
@@ -117,10 +120,11 @@ body {
 
 main {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 30px;
-    padding: 8px 8px;
-    margin-top: 30px;
+    grid-gap: 70px 20px;
+    grid-template-columns: repeat(5, 1fr);
+    width: 90%;
+    margin: auto;
+    padding-bottom: 40px;
 }
 
 main .product {
@@ -132,14 +136,13 @@ main .product {
 }
 
 .product img {
-    width: 60%;
-    height: 70%;
-    border-radius: 20px;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 main .product:hover {
-    transform: translateY(-5px);
-    box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+    box-shadow: 1px 6px 3px 0 rgb(185, 185, 185);
 }
 
 h2 {
@@ -172,17 +175,47 @@ h4 {
     }
 }
 
-.main-content {
-    background-image: url(webasserts/main-home-image-1.jpg);
-    height: 80vh;
+.Second-container {
+    display: grid;
+    grid-gap: 70px 20px;
+    grid-template-columns: repeat(5, 1fr);
+    width: 90%;
+    margin: auto;
+    padding-bottom: 40px;
+}
+
+.Second-container .product-second {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    border-radius: 25px;
+    text-align: center;
+    cursor: pointer;
+    padding: 8px 10px;
+}
+
+.product-second img {
     width: 100%;
-    min-width: 20px;
-    margin-top: 10%;
-    background-size: cover;
-    background-position: center center;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: center;
-    position: relative;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.Second-container .product-second:hover {
+    box-shadow: 1px 6px 3px 0 rgb(185, 185, 185);
+}
+
+.footer {
+    width: 100%;
+    background-color: rgb(29, 29, 29);
+    color: white;
+    letter-spacing: 1px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-transform: uppercase;
+    font-size: 15px;
+    padding: 15px 300px;
+    box-sizing: border-box;
+}
+
+.webfooter {
+    padding-top: 30px;
+    font-size: 12px;
 }
